@@ -1,4 +1,4 @@
-Joe defined a dictionary listing his favorite artists, their albums, and the song from each of the albums. It looks as follows:
+# Joe defined a dictionary listing his favorite artists, their albums, and the song from each of the albums. It looks as follows:
 # 
 # tracks = {"Woodkid": {"The Golden Age": "Run Boy Run",
 #                       "On the Other Side": "Samara"},
