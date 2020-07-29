@@ -29,3 +29,10 @@ def tracklist(**tracks):
         print(artist)
         for album, song in albums.items():
             print(f"ALBUM: {album} TRACK: {song}")
+
+            
+# def tracklist(**tracks):
+#     for artist in tracks:
+#         print(artist)
+#         for album, song in tracks[artist].items():
+#             print(f"ALBUM: {album} TRACK: {song}")
