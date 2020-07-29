@@ -15,11 +15,19 @@
 # Roman : 185                                                                               
 # Wilson : 185
 
+
 def tallest_people(**kwargs):
-    mx = max(kwargs.values())
-    most_tall = [key for key, value in kwargs.items() if value == mx]
+    max_height = max(kwargs.values())
+    most_tall = [key for key, value in kwargs.items() if value == max_height]
     most_tall.sort()
     for key in most_tall:
         print(f"{key} {kwargs[key]}")
 
+        
+# def tallest_people(**people):
+#     for name, height in sorted(people.items()):
+#         if height == max(people.values()):
+#             print(name, ":", height)
+
+        
 tallest_people(Jackie=176, Wilson=185, Saersha=165, Roman=185, Abram=169)
