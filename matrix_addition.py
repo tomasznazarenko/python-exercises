@@ -47,8 +47,7 @@
 # Output:
 # 
 # ERROR
-
-def read_rows_columns():
+def read_rows_columns_count():
     return (int(n) for n in input().split())
 
 
@@ -58,7 +57,7 @@ def read_row():
 
 def read_matrix():
     matrix = []
-    rows_count, columns_count = read_rows_columns()
+    rows_count, columns_count = read_rows_columns_count()
     for _ in range(rows_count):
         matrix.append(read_row())
     return rows_count, columns_count, matrix
@@ -69,14 +68,14 @@ def print_matrix(matrix):
         print(' '.join(map(str, row)))
 
 
-ROWS_M = 0
-COLUMNS_N = 1
+ROWS = 0
+COLUMNS = 1
 MATRIX = 2
 
 matrix_a = read_matrix()
 matrix_b = read_matrix()
 
-if matrix_a[ROWS_M] != matrix_b[ROWS_M] or matrix_a[COLUMNS_N] != matrix_b[COLUMNS_N]:
+if matrix_a[ROWS] != matrix_b[ROWS] or matrix_a[COLUMNS] != matrix_b[COLUMNS]:
     print("ERROR")
 else:
     a_plus_b = [list(map(sum, zip(*t))) for t in zip(matrix_a[MATRIX], matrix_b[MATRIX])]
