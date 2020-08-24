@@ -32,7 +32,6 @@ ROWS = 0
 COLUMNS = 1
 MATRIX = 2
 
-
 matrix_a = read_matrix()
 constant = read_constant()
 
