@@ -1,0 +1,5 @@
+Imagine that you have a package "music" with three subpackages: "rock", "jazz" and "classical". 
+Each subpackage has 3 modules: authors.py, epoques.py and tones.py. 
+How can we import the function of_the_18th_century from the classical authors' module?
+
+from music.classical.authors import of_the_18th_century
